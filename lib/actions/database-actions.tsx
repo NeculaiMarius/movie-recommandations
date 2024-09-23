@@ -1,7 +1,5 @@
 "use server";
 import { sql } from "@vercel/postgres";
-import { Console } from "console";
-import { userAgent } from "next/server";
 
 export const verifyEmail=async(
     email: string

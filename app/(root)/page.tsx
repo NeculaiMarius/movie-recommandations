@@ -1,9 +1,5 @@
-import React, { use } from 'react';
-import { options } from '../api/auth/[...nextauth]/options';
 import { getServerSession } from 'next-auth/next';
 import Link from 'next/link';
-import { useSession } from 'next-auth/react';
-import { getUserByEmail } from '@/lib/actions/database-actions';
 import { navigationLinks } from '@/constants';
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';

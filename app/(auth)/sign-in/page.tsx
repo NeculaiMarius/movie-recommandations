@@ -1,6 +1,5 @@
 import SignInForm from '@/components/SignInForm'
 import React from 'react'
-import { sql } from '@vercel/postgres'
 
 const SignIn = async() => {
 
