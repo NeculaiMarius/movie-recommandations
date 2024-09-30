@@ -9,7 +9,7 @@ const Home =async () => {
   const session=await getServerSession();
   return (
     <>
-      <div className='h-[calc(100vh-112px)] border-2 overflow-auto flex flex-col'>
+      <div className='h-[calc(100vh-80px)] border-2 overflow-hidden flex flex-col'>
         <div className='welcome-text-container'>
           <span >Hello, <span className='welcome-username'>{session?.user?.name}</span>! choose one option: </span>
         </div>

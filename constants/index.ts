@@ -1,17 +1,17 @@
 export const navigationLinks=[
     {
         label:"My favorite movie",
-        route:"/",
+        route:"/My-favorite-movie",
         imgURL:"/icons/favorite.svg",
     },
     {
         label:"Best by category",
-        route:"/",
+        route:"/Best-by-category",
         imgURL:"/icons/category.svg",
     },
     {
         label:"Best rated",
-        route:"/",
+        route:"/Best-rated",
         imgURL:"/icons/star.svg",
     },
     {

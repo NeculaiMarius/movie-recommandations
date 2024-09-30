@@ -91,6 +91,10 @@ body {
 
 
 @layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
   .text-balance {
     text-wrap: balance;
   }
@@ -104,7 +108,7 @@ body {
   }
 
   .navbar-layout {
-    @apply flex items-center justify-between p-4 sm:p-8;
+    @apply flex items-center justify-between p-4;
   }
 
   .welcome-text-container{
@@ -119,5 +123,8 @@ body {
     @apply flex flex-wrap justify-center items-start px-5 py-2;
   }
 
+
+
+  
 }
 
