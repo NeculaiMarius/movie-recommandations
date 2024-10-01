@@ -20,6 +20,11 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 
@@ -123,8 +128,15 @@ body {
     @apply flex flex-wrap justify-center items-start px-5 py-2;
   }
 
+  .card-movie-title{
+    @apply font-bold w-full text-center absolute bottom-0  py-4
+  text-white bg-gradient-to-t from-black via-black/80 to-transparent
+    px-2 rounded opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out
+  }
 
-
+  .badge-wrapper{
+    @apply relative p-[2px] bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl
+  }
   
 }
 

@@ -16,7 +16,7 @@ const LeftSidebar = () => {
 
             return(
               <Link 
-              className={cn("m-4 py-2 px-4 justify-between",badgeVariants({ variant: "default" }),{'bg-red-500':isActive})}
+              className={cn("m-4 py-2 px-4 justify-between",badgeVariants({ variant: "default" }),{'bg-blue-700 hover:bg-blue-700':isActive})}
               style={{ padding: '8px 16px' }}
               href={item.route} 
               key={item.label}
