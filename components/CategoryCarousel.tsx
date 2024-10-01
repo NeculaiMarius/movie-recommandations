@@ -9,12 +9,11 @@ import {
 } from "@/components/ui/carousel"
 import { sql } from '@vercel/postgres'
 import Image from "next/image"
+import {cleanMovieName} from "@/lib/actions/functions"
 
 const CategoryCarousel = async ({category}:{category:string}) => {
   const {rows}=await sql`SELECT * FROM movies WHERE genres LIKE ${`%${category}%`} ORDER BY vote_average DESC LIMIT 10;`
-  function cleanMovieName(movieName:string) {
-    return movieName.replace(/[\\/*?:"<>|]/g, "");
-  }
+  
 
   return (
     <div className='flex flex-col my-10'>

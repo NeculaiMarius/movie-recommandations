@@ -10,8 +10,8 @@ export const navigationLinks=[
         imgURL:"/icons/category.svg",
     },
     {
-        label:"Best rated",
-        route:"/Best-rated",
+        label:"Most popular",
+        route:"/Most-popular",
         imgURL:"/icons/star.svg",
     },
     {
