@@ -1,6 +1,5 @@
 import MovieCard from '@/components/MovieCard'
 import PageHeader from '@/components/PageHeader'
-import { Card } from '@/components/ui/card'
 import { sql } from '@vercel/postgres'
 import React from 'react'
 
